@@ -6,6 +6,7 @@ import JetInput from '@/Jetstream/Input.vue';
 import JetCheckbox from '@/Jetstream/Checkbox.vue';
 import JetLabel from '@/Jetstream/Label.vue';
 import JetValidationErrors from '@/Jetstream/ValidationErrors.vue';
+import JetInputError from '@/Jetstream/InputError.vue';
 
 defineProps({
     status: String,
@@ -34,9 +35,6 @@ const submit = () => {
                 <div class="min-h-full flex">
                     <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
                         <div class="mx-auto mt-12 w-full max-w-sm lg:w-96">
-
-                            <JetValidationErrors class="mb-4" />
-
                             <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
                                 {{ status }}
                             </div>
@@ -52,7 +50,7 @@ const submit = () => {
                                             <div class="w-full border-t border-gray-300" />
                                         </div>
                                         <div class="relative flex justify-center text-sm">
-                                            <span class="px-2 bg-white text-gray-500"></span>
+                                            <span class="px-2 bg-white text-gray-500">Welcome back</span>
                                         </div>
                                     </div>
                                 </div>
@@ -69,6 +67,7 @@ const submit = () => {
                                                 required
                                                 autofocus
                                             />
+                                            <JetInputError :message="form.errors.email" />
                                         </div>
 
                                         <div class="space-y-1">
@@ -82,6 +81,7 @@ const submit = () => {
                                                 required
                                                 autocomplete="current-password"
                                             />
+                                            <JetInputError :message="form.errors.password" />
                                         </div>
 
                                         <div class="flex items-center justify-between">

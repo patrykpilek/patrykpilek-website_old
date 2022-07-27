@@ -44,7 +44,7 @@
 
 ### ToDo
 - [x] Change login page template
-- [ ] Change register page template
+- [x] Change register page template
 - [ ] Change forgot password page template
 - [ ] Change confirm password page template
 - [ ] Change reset password page template
