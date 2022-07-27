@@ -16,7 +16,7 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
                     </Link>
                 </div>
                 <div class="-mr-2 -my-2 md:hidden">
-                    <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                         <span class="sr-only">Open menu</span>
                         <MenuIcon class="h-6 w-6" aria-hidden="true" />
                     </PopoverButton>
@@ -32,7 +32,7 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
                 <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                     <Link v-if="$page.props.user" :href="route('dashboard')" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Dashboard</Link>
                     <template v-else>
-                        <Link :href="route('login')" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Log in</Link>
+                        <Link :href="route('login')" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Log In</Link>
                         <Link :href="route('register')" class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700">Sign up</Link>
                     </template>
                 </div>
@@ -47,7 +47,7 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
                                     <img class="h-8 w-auto" :src="'../storage/images/logo.png'" alt="logo" />
                                 </div>
                                 <div class="-mr-2">
-                                    <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                                         <span class="sr-only">Close menu</span>
                                         <XIcon class="h-6 w-6" aria-hidden="true" />
                                     </PopoverButton>

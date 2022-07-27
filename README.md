@@ -43,6 +43,10 @@
 
 
 ### ToDo
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+- [x] Change login page template
+- [ ] Change register page template
+- [ ] Change forgot password page template
+- [ ] Change confirm password page template
+- [ ] Change reset password page template
+- [ ] Change two-factor confirmation page template
+- [ ] Change verify email page template
