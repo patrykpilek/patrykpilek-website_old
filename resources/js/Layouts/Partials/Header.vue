@@ -24,7 +24,6 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
                 <PopoverGroup as="nav" class="hidden md:flex space-x-10">
                     <Link :href="route('HomePage')" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</Link>
                     <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Blog </a>
-                    <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Movies </a>
                     <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Contact </a>
                 </PopoverGroup>
 
@@ -58,7 +57,6 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
                             <div class="grid grid-cols-2 gap-4">
                                 <Link :href="route('HomePage')" class="text-base font-medium text-gray-900 hover:text-gray-700">Home</Link>
                                 <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Blog </a>
-                                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Movies </a>
                                 <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Contact </a>
                             </div>
                             <div class="mt-6">
