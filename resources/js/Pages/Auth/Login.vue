@@ -39,7 +39,7 @@ const submit = () => {
                             </div>
 
                             <div>
-                                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
+                                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Log in to your account</h2>
                             </div>
 
                             <div class="mt-8">
