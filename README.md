@@ -49,4 +49,4 @@
 - [ ] Change confirm password page template
 - [x] Change reset password page template
 - [x] Change two-factor confirmation page template
-- [ ] Change verify email page template
+- [x] Change verify email page template
