@@ -1,4 +1,7 @@
 # patrykpilek - website
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 
 ### Laravel Packages
@@ -50,3 +53,9 @@
 - [x] Change reset password page template
 - [x] Change two-factor confirmation page template
 - [x] Change verify email page template
+=======
+>>>>>>> parent of 878166c (Laravel Authentication (Jetstream))
+=======
+>>>>>>> parent of 878166c (Laravel Authentication (Jetstream))
+=======
+>>>>>>> parent of 878166c (Laravel Authentication (Jetstream))

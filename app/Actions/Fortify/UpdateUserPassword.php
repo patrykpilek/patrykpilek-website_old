@@ -15,7 +15,7 @@ class UpdateUserPassword implements UpdatesUserPasswords
      *
      * @param  mixed  $user
      * @param  array  $input
-     * @return void
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update($user, array $input)
     {
@@ -31,5 +31,7 @@ class UpdateUserPassword implements UpdatesUserPasswords
         $user->forceFill([
             'password' => Hash::make($input['password']),
         ])->save();
+
+        return redirect()->route('user-password.update');
     }
 }

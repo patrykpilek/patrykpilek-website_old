@@ -1,16 +1,16 @@
 <script setup>
-import HomeLayout from '@/Layouts/HomeLayout.vue';
+import GuestLayout from '@/Layouts/GuestLayout.vue';
 
 </script>
-<template>
-    <HomeLayout title="Home">
 
+<template>
+    <GuestLayout title="Home">
         <!-- Hero section -->
         <div class="relative">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="relative shadow-xl mt-10 lg:mt-20 sm:rounded-2xl sm:overflow-hidden">
                     <div class="blur-sm absolute inset-0">
-                        <img class="h-full w-full object-cover" src="https://patrykpilek.com/storage/img/patryk.jpg" alt="People working on laptops" />
+                        <img class="h-full w-full object-cover" :src="'storage/images/home_img.jpg'" alt="hero image" />
                         <div class="absolute inset-0 bg-gradient-to-r from-white to-blue-600 bg-origin-border mix-blend-multiply" />
                     </div>
                     <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
@@ -26,6 +26,5 @@ import HomeLayout from '@/Layouts/HomeLayout.vue';
                 </div>
             </div>
         </div>
-    </HomeLayout>
-
+    </GuestLayout>
 </template>

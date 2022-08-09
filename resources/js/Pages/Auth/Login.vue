@@ -1,6 +1,6 @@
 <script setup>
 import { Link, useForm } from '@inertiajs/inertia-vue3';
-import HomeLayout from '@/Layouts/HomeLayout.vue';
+import GuestLayout from '@/Layouts/GuestLayout.vue';
 import JetButton from '@/Jetstream/Button.vue';
 import JetInput from '@/Jetstream/Input.vue';
 import JetCheckbox from '@/Jetstream/Checkbox.vue';
@@ -28,7 +28,7 @@ const submit = () => {
 </script>
 
 <template>
-    <HomeLayout title="Log In">
+    <GuestLayout title="Log In">
         <div class="relative">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="min-h-full flex">
@@ -39,7 +39,7 @@ const submit = () => {
                             </div>
 
                             <div>
-                                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Log in to your account</h2>
+                                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Log In to your account</h2>
                             </div>
 
                             <div class="mt-8">
@@ -49,7 +49,7 @@ const submit = () => {
                                             <div class="w-full border-t border-gray-300" />
                                         </div>
                                         <div class="relative flex justify-center text-sm">
-                                            <span class="px-2 bg-white text-gray-500">Welcome back</span>
+                                            <span class="px-2 bg-white text-gray-500">Welcome Back</span>
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@ const submit = () => {
                                         </div>
 
                                         <div>
-                                            <JetButton class="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                                            <JetButton class="w-full flex items-center justify-center bg-gradient-to-r from-sky-400 to-blue-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-sky-700 hover:to-blue-700" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                                                 Log in
                                             </JetButton>
                                         </div>
@@ -110,5 +110,5 @@ const submit = () => {
                 </div>
             </div>
         </div>
-    </HomeLayout>
+    </GuestLayout>
 </template>

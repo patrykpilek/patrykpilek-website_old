@@ -30,6 +30,7 @@ const logout = () => {
                 </div>
                 <PopoverGroup as="nav" class="hidden md:flex space-x-10">
                     <Link :href="route('HomePage')" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</Link>
+                    <Link :href="route('dashboard')" class="text-base font-medium text-gray-500 hover:text-gray-900">Dashboard</Link>
                     <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Blog</a>
                     <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Contact</a>
                 </PopoverGroup>
@@ -57,7 +58,7 @@ const logout = () => {
                                     </div>
                                     <MenuItem v-slot="{ active }">
                                         <Link :href="route('profile.show')" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">
-                                            Profile
+                                            Your Profile
                                         </Link>
                                     </MenuItem>
                                 </div>
@@ -140,7 +141,7 @@ const logout = () => {
                                     </div>
                                 </div>
                                 <div class="grid grid-cols-2 gap-4 mt-6">
-                                    <Link :href="route('profile.show')" class="text-base font-medium text-gray-900 hover:text-gray-700">Profile</Link>
+                                    <Link :href="route('profile.show')" class="text-base font-medium text-gray-900 hover:text-gray-700">Your Profile</Link>
                                 </div>
                                 <div class="mt-6">
                                     <form method="POST" @submit.prevent="logout">

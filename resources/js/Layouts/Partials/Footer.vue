@@ -63,7 +63,7 @@ const footerNavigation = {
 </script>
 
 <template>
-    <footer class="bg-withe" aria-labelledby="footer-heading">
+    <div>
         <h2 id="footer-heading" class="sr-only">Footer</h2>
         <div class="max-w-7xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:pt-24 lg:px-8">
             <div class="mt-12 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between lg:mt-16">
@@ -76,5 +76,5 @@ const footerNavigation = {
                 <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">&copy; 2022 patrykpilek.com, All rights reserved.</p>
             </div>
         </div>
-    </footer>
+    </div>
 </template>
